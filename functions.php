@@ -5,10 +5,14 @@ function load_my_scripts() {
   wp_enqueue_script( 'boot1','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js', array('jquery'));
   wp_enqueue_script( 'boot2','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js', array('jquery'));
   wp_enqueue_script( 'boot3','https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js', array('jquery'));
- 
-  wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css' );
-  wp_enqueue_style( 'test', get_stylesheet_directory_uri() . '/responsive.css' );
+wp_enqueue_script('lottie-player' , 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js' , array(), false, true);
+wp_enqueue_script('lottie-interactive' , 'https://unpkg.com/lottie-interactive@latest/dist/lottie-interactive.js' , array(), false, true);
+wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js', array(), false, true );
+wp_enqueue_script( 'gsap-js-custom', get_stylesheet_directory_uri() . '/script1.js', array(), false, true );
 
+
+wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css' );
+  wp_enqueue_style( 'test', get_stylesheet_directory_uri() . '/responsive.css' );
 }
 add_action( 'wp_enqueue_scripts', 'load_my_scripts');
 ?>
