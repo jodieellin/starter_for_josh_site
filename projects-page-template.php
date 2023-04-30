@@ -1,15 +1,11 @@
 <?php
-    /*
-    Template Name: Projects
-    */
-    ?>
-
-    <?php require_once('small_header.php'); ?>
-<div class="container-fluid maincontainer">
+/*
+Template Name: Projects
+*/
+?><?php require_once('page_header.php'); ?><div class="container-fluid maincontainer">
     <div class="container">
         <div class="row">
-            <section class="maintext">              
-            <?php 
+            <section class="maintext"><?php 
 $args = array(
   'category_name' =>  'Projects',
  // 'posts_per_page'    =>   1
@@ -23,16 +19,15 @@ $the_query = new WP_Query( $args ); ?>
  
     <!-- the loop -->
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
- <div class="thepost">
-<h2><?php the_title(); ?></h2> 
-    
+    <h2><?php the_title(); ?></h2> 
+    <div>
 <?php
                 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                     the_post_thumbnail('thumbnail');
                 } ?>
-<p class="about-text"><?php the_excerpt(); ?></p>
+<p class="about-text"><?php the_excerpt(); ?></p></div>
     <a class="readmore" href="<?php the_permalink(); ?>"> CONTINUE READING</a>
-</div>    <?php endwhile; ?>
+    <?php endwhile; ?>
     <!-- end of the loop -->
  
     <!-- pagination here -->
@@ -41,11 +36,8 @@ $the_query = new WP_Query( $args ); ?>
  
 <?php else : ?>
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
-
-</section>
+<?php endif; ?></section>
            
      </div>
-    </div><!-- container  -->
-  </div>  <!-- container fluid -->
-<?php get_footer(); ?>
+    </div>
+  </div><?php get_footer(); ?>
