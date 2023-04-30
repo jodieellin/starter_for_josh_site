@@ -5,155 +5,166 @@ Description: A style-free theme to get you started on an HTML5-based Wordpress t
 Author: Me
 Author URI: http://joshwhitkin.com
 Version: 1
-*/ 
+*/
+.bg1 {
+    background-image: url(images/header.jpg);
+    background-size: cover;
+
+}
+
+.navbar {
+    font-size: 0.875em;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.orange {
+    color: #FDA118;
+}
+
+.josh {
+    color: white;
+}
+
+.tag {
+    display: flex;
+    justify-content: flex-end;
+    color: #ffff;
+    text-align: right;
+    padding-bottom: 10%;
+    margin-right: 15%;
+    margin-top: 30%;
+}
+
+.tag h1 {
+    width: 50%;
+    font-size: 7em;
+    letter-spacing: -10px;
+    font-weight: 800;
+    line-height: 75%;
+    font-family: 'Raleway', sans-serif;
+
+}
 
 .small_herobg {
     width: 100%;
-background: url("images/small_header_bg.jpg ") no-repeat center center;
-background-size: cover;/*make the background image cover the whole div proportionally*/
-height: 40vh; /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
+    background: url("images/small_header_bg.jpg ") no-repeat center center;
+    background-size: cover;
+    /*make the background image cover the whole div proportionally*/
+    height: 40vh;
+    /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
 
 }
 
-.bg1{
-    background-image: url("images/header.jpg");
-    background-size:cover;
-
+.aboutbg {
+    background-color: #E8E7EA;
+    padding: 2%;
 }
 
-.navbar{
-    font-size: 0.8em;
-}
-
-.navbar-brand{
-    font-weight:bold;
-    letter-spacing:-2px;
-}
-
-.orange{
-    color:#FDA118; 
-}
-
-.josh{
-    color:white;
-
-}
-
-.tag{
-    display: flex;
-    justify-content: flex-end;
-    color:white; 
-    text-align: right;
-    padding-bottom:10%;
-    margin-right:15%;
-    margin-top:140px;
-
-}
-
-.tag h1{
-    width:341px;
-    font-size: 7em;
-    letter-spacing: -10px;
-    font-weight:800;
-    line-height:75%;
+.aboutbg h2 {
+    font-size: 2.4em;
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
-.aboutbg{
-    background-color:#E8E7EA;
-    PADDING:2%;
+.particle {
+    text-align: right;
+    margin-right: 150px;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 40px;
 }
 
-.aboutbg h2{
-    font-size:2.4em;
-    font-family:'Raleway', sans-serif;
-    font-weight:800;
-}
-
-.particle{
-    text-align:right;
-    margin-right:150px;
-    font-size:1.5em;
-    font-style:italic;
-    font-weight:400;
-    padding-bottom:40px;
-}
-
-.about-text{
-    margin-right: 40px;
+.about-text {
     margin-left: 40px;
-    font-size: 1.8em;
+    margin-right: 40px;
+    font-size: 1.4em;
     line-height: 2em;
+}
+
+.article-p {
+    text-align: left;
 
 }
 
-.blocker{
-    width:133px;
-    height:10px;
-    background-color:#AC83BA;
+
+.blocker {
+    width: 133px;
+    height: 10px;
+    background-color: #AC83BA;
     margin: auto;
-    margin-bottom:40px;
-    margin-top:20px;
-
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
-.articlebg{
-    background-color:#FDFDFE;
-
+.articlesbg {
+    background-color: #FDFDFE;
 }
 
-.article-title{
-    font-size:1.4em;
-    font-family: 'Raleways', sans-serif;
-    font-weight:800;
-    color:black;
+.article-title {
+    font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: black;
     padding-top: 20px;
     margin-bottom: 0px;
-} 
-
-.articlesbg h3{
-    padding-top:30px;
-    padding-bottom:30px;
-    font-weight:bold;
+    text-align: left;
 
 }
 
-.date{
-    font-style:italic;
-    font-size:0.8em;
-    text-align:left;
+.articlesbg h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
 }
 
-.readmore{
+/* ***descendant code */
+
+.date {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: -5px;
+    margin-top: -5px;
+
+}
+
+.readmore {
     display: block;
-    color:#848181;
-    font-size:0.9em;
-    margin-bottom:30px;
-   
+    color: #848181;
+    font-size: 0.9em;
+    margin-bottom: 30px;
 }
 
-footer{
+footer {
     background-image: url(images/footer.jpg);
     background-size: cover;
-    background-position:center center ;
-
-
-}
-
-footer p{
-    color:white;
-    font-weight:bold;
-    padding:5%;
-}
-
-.smallpage-bg{
+    background-position: center center;
     width: 100%;
-background: url("images/page_header_bg.jpg") no-repeat center center;
-background-size: cover;
-height: 40vh; 
 }
 
-.smallpage-title{ 
+footer p {
+    color: white;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.smallpage-bg1 {
+    width: 100%;
+    background: url("images/page_header_bg.jpg") no-repeat center center;
+    background-size: cover;
+    /*make the background image cover the whole div proportionally*/
+    height: 40vh;
+    /*Viewport Height (vh) — This unit is based on the height of the viewport. A value of 1vh is equal to 1% of the viewport height. */
+
+}
+
+.smallpage-title {
     font-size: 4em;
     color: white;
     font-weight: 800;
